@@ -1,5 +1,5 @@
 @echo off
-::此bat僅供win使用，記得安裝curl才可正確運行  credit by maxrdnew, modified by EricTai
+::此bat僅供win使用，記得安裝curl才可正確運行  credited by maxrdnew, modified by EricTai
 
 ::轉call HA用
 python earthquake.py %1 %2
