@@ -2,6 +2,7 @@
 EEW地牛預警後，轉通知LINE
 WIN/LINX雙版本可用
 
+感謝Rain Chi大大提供原始想法及運作框架，感謝maxrdnew大大跟進優化
 
 WIN：通知震度與預報秒數(感謝maxrdnew大大無償提供基本框架)
 
