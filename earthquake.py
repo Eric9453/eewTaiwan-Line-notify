@@ -5,6 +5,7 @@ import sys
 import time #轉換時間形式用，如無需求可註解
  
 level = str(sys.argv[1])
+#level = level.replace("+", ""); #把+註解掉，避免local tts停頓問題，有需要可可已打開此註解
 #seconds = str(sys.argv[2]) #Rain Chi大大的原code
 second = int(sys.argv[2]) -3 #把Rain Chi大大的秒數減3秒供倒數用，會出現負數如下校正
 
