@@ -20,8 +20,7 @@ image='/home/eric/EK/f.png'
 #sleep 3s
 
 #請填入你的line notify偷啃
-#line_token="你的line notify token"
-line_token="xMoYGgZRAzAv66Djf2NMMiPHAVW3QjGJQydcud9F05Y"
+line_token="你的line notify token"
 
 #Line傳出的文字訊息，enter可提供換行
 msg="　
