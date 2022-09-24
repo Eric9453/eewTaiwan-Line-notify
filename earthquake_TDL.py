@@ -1,4 +1,5 @@
 ### 未來要做地震分級動作的版本，大於6級的call開門+斷電器+大聲TTS通知的script；否則call單純TTS通知script
+### 未來才要完成，現在不要用這支py
 #credit by RainChi大大(https://pastebin.com/zR9BWdnK), modified by EricTai
 from requests import post
 from datetime import datetime
