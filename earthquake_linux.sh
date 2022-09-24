@@ -5,7 +5,7 @@
 #E.T.
 
 #call py to do TTS in HA creditd by Rain Chi大大
-#python3 earthquake.py "$@"
+python3 earthquake.py "$@"
 
 #給通知用的時間戳
 date_n=$(date +"%Y-%m-%d %H:%M:%S")
@@ -13,7 +13,8 @@ date_n=$(date +"%Y-%m-%d %H:%M:%S")
 #Linux系統內建擷取地牛視窗圖，命名為f.png可自行更改
 gnome-screenshot -wB --file=f.png
 
-#給LINE用crul傳圖參照的擷圖路徑，第一次觸發時會跳出視窗請先選好儲存位置，並改成你的檔案路徑
+#給LINE用crul傳圖參照的擷圖路徑：
+#修改說明：第一次觸發截圖時會系統會跳出小視窗詢問截圖儲存位置，請選好儲存位置後，回到此處改成你的存圖路徑
 image='/home/eric/EK/f.png'
 
 #如果虛擬機擷圖速度慢的再把等待秒數的註解井號打開
