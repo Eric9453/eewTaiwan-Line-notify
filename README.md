@@ -16,3 +16,9 @@ LINUX：通知震度與預報秒數，以及傳送地牛預報的畫面
   <source media="(prefers-color-scheme: light)" srcset="https://github.com/Eric9453/eewTaiwan-Line-notify/blob/main/example%20pics/capture1.png">
   <img alt="Shows an illustrated sun in light color mode and a moon with stars in dark color mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
 </picture>
+
+# To Do list
+- [ ] Linux版本的安裝教學
+- [ ] [分級動作](https://github.com/Eric9453/eewTaiwan-Line-notify/blob/main/earthquake_TDL.py)
+- [x] 將地牛安裝於雲端主機:tada:(目前已安裝於AWS中運行)
+- [ ] 地牛可以搞成docker嗎？
