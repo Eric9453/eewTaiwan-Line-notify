@@ -18,7 +18,10 @@ LINUX：通知震度與預報秒數，以及傳送地牛預報的畫面
 </picture>
 
 # To Do list
-- [ ] Linux版本的安裝教學
+- [x] ~~Linux版本的安裝教學~~聽說剽竊仔很猖狂，先不寫了，其實也沒多難
+- [ ] 單shell版本，以curl完成API之調用
 - [ ] [分級動作](https://github.com/Eric9453/eewTaiwan-Line-notify/blob/main/earthquake_TDL.py)
-- [x] 將地牛安裝於雲端主機:tada:(目前已安裝於AWS中運行)
+- [ ] 如要推廣，有打算做成hacs以簡化一般使用者安裝使用
 - [ ] 地牛可以搞成docker嗎？
+- [x] 將地牛安裝於雲端主機:tada:(目前已安裝於AWS中運行，但執行效率沒有很好，可能是因為UI較為耗能的關係)
+
