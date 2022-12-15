@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #僅適用於LINUX環境。請將以下內容儲存為earthquake.sh ，並注意檔案權限以免執行失敗。
 #使用方式：由地牛警報發生時觸發此shell，此版本已含震度及預報秒數通知，並擷圖後傳至Line以圖文通知
 #如需其他進階功能可透過調用earthquake.py於HA中完成(如TTS等)。
@@ -20,8 +20,11 @@ image='/home/eric/EK/f.png'
 #如果虛擬機擷圖速度慢的再把等待秒數的註解井號打開
 #sleep 3s
 
-#請填入你的line notify偷啃
-line_token="你的line notify token"
+#請填入你的line notify偷啃；功能更新：要使用多組通知的話請將多組偷啃的註解取消並填入偷啃即可
+line_token[1]="你的line notify token"
+#line_token[2]="你的line notify token"
+#line_token[3]="你的line notify token"
+#line_token[N寫數字]="你的第N組line notify token"
 
 #Line傳出的文字訊息，enter可提供換行
 msg="　
@@ -29,8 +32,11 @@ $date_n
 地震來襲警告：
 預估震度$1級，將於$2秒後到達！"
 
-#這裡不用動，謝謝配合
-curl -X POST https://notify-api.line.me/api/notify \
-       -H "Authorization: Bearer $line_token" \
-       -F "message=$msg" \
-       -F "imageFile=@$image"
+for ((i=1; i <= ${#line_token[@]}; i++))
+do
+        lt=${line_token[$i]}
+        curl -X POST https://notify-api.line.me/api/notify \
+               -H "Authorization: Bearer $lt" \
+               -F "message=$msg" \
+               -F "imageFile=@$image"
+done
